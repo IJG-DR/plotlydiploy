@@ -1,0 +1,45 @@
+<!--------------------------------------------------------------------
+    MODULE 12.4.1 - SKILL DRILL
+
+    Create a new directory, containing new index.html 
+    and script.js files. Use the D3.js library to
+    create an event listener for a dropdown menu.
+
+    Your dropdown menu should contain the following
+    names: Mickey, Minnie, Donald, Goofy. When a 
+    character (e.g., Minnie) is chosen from the 
+    dropdown menu by a user, the character's name
+    should be printed to the browser console.
+--------------------------------------------------------------------->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Events</title>
+  <!-- Establish link to D3 CDN resources -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.7/d3.min.js"></script>
+  <!-- Establish link to Plotly resources -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <div id="menu"></div>
+  <!-- Create a drop-down menu -->
+  <select id="selectOption">
+    <!-- Define de options available under the 
+         drop-down menu (in this case, 2) 
+         NOTE: if no 'value' attribute is
+         assigned, the value will be the text
+         assigned to that option -->
+    <option>Mickey</option>
+    <option>Minnie</option>
+    <option>Donald</option>
+    <option>Goofy</option>
+  </select>
+<!-- Establish link to javascript file -->
+  <script src="script.js"></script>
+</body>
+</html>
