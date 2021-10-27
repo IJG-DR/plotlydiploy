@@ -211,6 +211,7 @@ function buildCharts(sample) {
 
         // 5. Create the layout for the gauge chart.
         var gaugeLayout = { 
+            //margin: {autoexpand: "true"},
             paper_bgcolor: "lightgrey",
             plot_bgcolor: "lightgrey",
             title: { text: "Belly Button Wash Frequency" , size: 30 }
