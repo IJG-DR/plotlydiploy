@@ -200,7 +200,7 @@ function buildCharts(sample) {
             type: "indicator",
             mode: "gauge+number",
             gauge: {
-                axis: { range: [null, 10] },
+                axis: { range: [null, 10], nticks: 10 },
                 bar: { color: "navy" },
                 steps: [
                   { range: [0, 2], color: "plum" },
