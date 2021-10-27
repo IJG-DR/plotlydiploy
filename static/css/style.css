@@ -3,12 +3,12 @@ MODULE 12 - Challenge - DELIVERABLE 4: Customize the Page
 ************************************************/
 
 body {
-    /*color: #f7f7f7;*/
     background-color:lightgrey;
   }
   
 
-/* Add background image to the jumbotron */
+/* Add background image to the jumbotron  and change
+   text colot to white */
 .jumbotron {
     color: #f7f7f7;
     background-image: url("../images/bacteria.jpeg");
