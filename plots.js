@@ -131,13 +131,18 @@ function buildCharts(sample) {
             x: xvalues,
             y: yticks,
             text: otuLabels,
+            marker: { 
+                   color: "plum" 
+            },
             orientation: 'h'
         }];
 
         // 9. Create the layout for the bar chart. 
         var barLayout = {
             title: "Top 10 Bacteria Cultures Found",
-            yaxis: {autorange: "reversed"}
+            yaxis: {autorange: "reversed"},
+            paper_bgcolor: "lightgrey",
+            plot_bgcolor: "lightgrey"
         };
 
         // 10. Use Plotly to plot the data with the layout. 
@@ -160,8 +165,14 @@ function buildCharts(sample) {
 
         // Create the layout for the bubble chart.
         var bubble_layout = {
-            title: "Bacteria Cultures Per Sample",
-            xaxis: {title: {text: "OTU ID"}}
+              title: "Bacteria Cultures Per Sample",
+              xaxis: {
+                   title: {
+                        text: "OTU ID"
+                   }
+              },
+              paper_bgcolor: "lightgrey",
+              plot_bgcolor: "lightgrey"
         }
 
         // Plot the bubble chart
@@ -187,22 +198,22 @@ function buildCharts(sample) {
             mode: "gauge+number",
             gauge: {
                 axis: { range: [null, 10] },
-                bar: { color: "black" },
+                bar: { color: "navy" },
                 steps: [
-                  { range: [0, 2], color: "red" },
-                  { range: [2, 4], color: "orange"},
-                  { range: [4, 6], color: "yellow"},
-                  { range: [6, 8], color: "limegreen"},
-                  { range: [8, 10], color: "green"},
+                  { range: [0, 2], color: "plum" },
+                  { range: [2, 4], color: "thistle"},
+                  { range: [4, 6], color: "lavender"},
+                  { range: [6, 8], color: "lightsteelblue"},
+                  { range: [8, 10], color: "cornflowerblue"},
                 ],
             }
         }];
 
         // 5. Create the layout for the gauge chart.
         var gaugeLayout = { 
-            title: { text: "Belly Button Washing Frequency", 
-                     font: { size: 30 }
-                    }
+            paper_bgcolor: "lightgrey",
+            plot_bgcolor: "lightgrey",
+            title: { text: "Belly Button Wash Frequency" , size: 30 }
         };
 
         // 6. Use Plotly to plot the gauge data and layout.

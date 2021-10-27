@@ -14,9 +14,11 @@
   <title>Bellybutton Biodiversity</title>
   <!-- Establish link to Bootstrap resources -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Add link to the CSS style customization file -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="bg-dark">
 
   <div class="container">
     <div class="row">
@@ -25,7 +27,7 @@
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
-    <div class="row">
+    <div class="row bg-dark">
       <div class="col-md-2">
         <div class="well">
           <h5>Test Subject ID No.:</h5>
@@ -40,7 +42,7 @@
           <!-- <select id="selDataset"></select> -->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
-        <div class="panel panel-primary">
+        <div class="panel panel-primary bg-dark">
           <div class="panel-heading">
             <h3 class="panel-title">Demographic Info</h3>
           </div>
@@ -53,6 +55,9 @@
         <div id="bar"></div>
       </div>
       <div class="col-md-5">
+        <!---
+        <h3 class="gauge-title">Belly Button Wash Frequency</h3>
+        -->
         <div id="gauge"></div>
       </div>
     </div>
