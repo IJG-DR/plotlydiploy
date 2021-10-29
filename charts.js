@@ -12,21 +12,24 @@ function init() {
     // to 'selDataset' in the HTML file). Store the
     // id in a variable.
     var selector = d3.select("#selDataset");
-  
+
     // Populate the filtered data by reading the 
     // key 'name' and storing  them in a variable
     // sampleNames, then for each name, append the 
     // list of options on the HTML drop-down menu.
     d3.json("samples.json").then((data) => {
-      console.log(data);
+      //console.log(data);
       var sampleNames = data.names;
+      //Call the metadata and chart functions to load first name
+      optionChanged(sampleNames[0]);
       sampleNames.forEach((sample) => {
         selector
           .append("option")
           .text(sample)
           .property("value", sample);
       });
-  })}
+    })
+}
   
 
 // Create a function that is called directly from the
